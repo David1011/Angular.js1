@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>RunJS</title>
+	<script id="jquery_182" type="text/javascript" class="library" src="http://sandbox.runjs.cn/js/sandbox/jquery/jquery-1.8.2.min.js"></script>
+	<script id="others_angular_103" type="text/javascript" class="library" src="http://sandbox.runjs.cn/js/sandbox/other/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="my.css">
+<script type="text/javascript" src="my.js"></script>
+</head>
+	<body>
+		<div class="register c-div" ng-pattern="/.{2-10}/" ng-controller="registerCtrl">
+	<form name="register" class="login-form c-form" autocomplete="off">
+			<table>
+				<tr>
+					<td>
+						<div class="inp-div">
+							<label>
+							<input required ng-pattern="/.{2,10}/" type="text" ng-model="name" name="name"/>
+							<span class="inp-tit" ng-class="{'inp-tit-float': !register.name.$viewValue, 'inp-tit-no-float': register.name.$viewValue}">Name</span>
+							<span class="valid-tit"  ng-class="{'valid-ok': register.name.$valid, 'valid-no-ok': !register.name.$valid}">Input 2-10 characters </span>
+							</label>
+						<div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="inp-div">
+							<label>
+							<input required ng-pattern="/.{6,}/" type="password" name="pwd" ng-model="pwd"/>
+							<span class="inp-tit" ng-class="{'inp-tit-float': !register.pwd.$viewValue, 'inp-tit-no-float': register.pwd.$viewValue}">Password</span>
+							<span class="valid-tit"  ng-class="{'valid-ok': register.pwd.$valid, 'valid-no-ok': !register.pwd.$valid}">Input at least 6 characters for password </span>
+							</label>
+							</label>
+						<div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="inp-div">
+						<label>
+							<input required type="password" name="pwds" ng-model="pwds"/>
+							<span class="inp-tit" ng-class="{'inp-tit-float': !register.pwds.$viewValue, 'inp-tit-no-float': register.pwds.$viewValue}">Repeat password</span>
+							<span class="valid-tit"  ng-class="{'valid-ok':register.pwds.$valid,'valid-no-ok':!register.pwds.$valid}">Input password again </span>
+						</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="inp-div">
+						<input type="submit" ng-class="{'submit-ok':!register.$invalid, 'submit-no-ok': register.$invalid}" value="Submit" />
+						</div>
+					</td>
+				</tr>
+			</table>
+	</form>
+</div>
+	</body>
+</html>

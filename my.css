@@ -1,0 +1,100 @@
+
+
+/** -------------------------start*/
+.index-bottom{
+	text-align: center;
+	background-color: rgba(22,44,88, 0.8);
+}
+/** -------------------------end*/
+
+/** -----------------------------start*/
+.c-div{
+	width: 355px;
+	margin: 0 auto;
+}
+.c-form{
+	padding: 50px;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255 , 0.8);
+	border: 1px solid #ccc;
+}
+.c-form input[type="text"],.c-form input[type="password"]{
+	width:250px;
+	height: 60px;
+	font-size: 15px;
+	padding: 0px 6px;
+	border: 1px solid rgba(91, 199, 211, 0.8);
+	border-radius: 1px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.c-form input[type="submit"]{
+	width:265px;
+	height: 30px;
+	
+	font-weight: bold;
+	
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;	/* Firefox 4 */
+	-webkit-transition: all 0.5s;	/* Safari , Chrome */
+	-o-transition: all 0.5s;	/* Opera */
+	
+}
+.submit-ok{
+	background-color: rgb(91, 199, 211);
+	border: rgb(91, 199, 211);
+}
+.submit-no-ok{
+	background-color: #ccc;
+	border: #ccc;
+}
+.inp-div{
+	position: relative;
+	margin: 5px 0px;
+	overflow: hidden;
+}
+/*验证提示文字*/
+.inp-div .valid-tit{
+	position: absolute;
+	bottom: 5px;
+	font-size:12px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.inp-div .valid-ok{
+	color: rgba(0, 0, 0, 0);
+	right: -20px;
+}
+.inp-div .valid-no-ok{
+	right: 5px;
+	color: rgba(0, 0, 0, 0.5);
+}
+input.ng-invalid {border: 1px solid red;}
+input.ng-valid {border: 1px solid green;}
+
+
+.inp-tit{
+	height: 40px;
+	position: absolute;
+	top:0;
+	left:8px;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.inp-tit-float{
+	line-height: 60px;
+	font-size: 15px;
+	color: #c6c6c6;
+}
+.inp-tit-no-float{
+	left:5px;
+	line-height: 20px;
+	font-size: 12px;
+	color: rgba(89, 174, 189, 1);
+	font-weight: bold;
+}
+
+/** -----------------------------end*/
